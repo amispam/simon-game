@@ -11,7 +11,7 @@ document.querySelector("html").addEventListener("keydown", function(evt){
     }
 });
 
-document.querySelector(".level-title").addEventListener("click", function(){
+document.querySelector("#level-title").addEventListener("click", function(){
     if(gameStartedFlag === 1){
         nextSequence();
         gameStartedFlag = 0;
