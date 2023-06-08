@@ -11,6 +11,13 @@ document.querySelector("html").addEventListener("keydown", function(evt){
     }
 });
 
+document.querySelector("html").addEventListener("click", function(){
+    if(gameStartedFlag === 1){
+        nextSequence();
+        gameStartedFlag = 0;
+    }
+});
+
 var colorArr = ["red", "blue", "green", "yellow"];
 function nextSequence(){
     clickflag = 0;
